@@ -92,5 +92,50 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 <h3 align="center"> Download and install VC_Redist, Agree with any terms and agreements and finish installing.
 </h3>
 <p>
-  <img src=""75%" width="100%"/>
+  <img src="https://i.imgur.com/ibdGDvv.png"75%" width="100%"/>
 </p>
+<br/>
+<h3 align="center">DOWNLOAD MySQL </h3>
+<h3 align="center"> Download and install MySQL, Agree with any terms and agreements up until you get to the password portion. Here you can create a username and password for the database that you'll be using to store the Ticket Information used in osTicket. 
+</h3>
+<p>
+<img src="https://i.imgur.com/H3DXc2f.png"75%" width="100%"/>
+<br/>
+<img src="https://i.imgur.com/0Y6GTRa.png" height="75%" width="100%" />
+</p>
+<br/>
+<h3 align="center">Install osTicket v1.15.8</h3>
+<br />
+<p>
+ Download osTicket (download from within lab files: link).
+</p>
+<p>
+	Extract and copy the “upload” folder INTO c:\inetpub\wwwroot:
+</p>
+        <img src="https://i.imgur.com/GdB6RVR.png" height="75%" width="100%" />
+	<img src="https://i.imgur.com/cx7zmmy.png" height="75%" width="100%" />
+ Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”:
+</p>
+<p>
+	<img src="https://i.imgur.com/lkRrNZJ.png" height="75%" width="100%" />
+</p>
+<br />
+<br />
+<h3 align="center">Reload IIS (Open IIS, Stop and Start the server)</h3>
+<br />
+<p>
+	Go to sites -> Default -> osTicket:
+</p>
+<p>
+<img src="https://i.imgur.com/p88NIJ9.png" height="75%" width="100%" />
+</p>
+<p>
+	<img src="https://i.imgur.com/QeWNlG3.png" height="75%" width="100%" />
+</p>
+<p>
+	On the right, click “Browse *:80”:
+</p>
+<p>
+	<img src="https://i.imgur.com/hPGNLL9.png" height="75%" width="100%"/>
+</p>
+<br />
