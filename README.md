@@ -127,10 +127,7 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 	Go to sites -> Default -> osTicket:
 </p>
 <p>
-<img src="https://i.imgur.com/p88NIJ9.png" height="75%" width="100%" />
-</p>
-<p>
-	<img src="https://i.imgur.com/QeWNlG3.png" height="75%" width="100%" />
+	<img src="https://i.imgur.com/p88NIJ9.png" height="75%" width="100%" />
 </p>
 <p>
 	On the right, click “Browse *:80”:
@@ -139,3 +136,145 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 	<img src="https://i.imgur.com/hPGNLL9.png" height="75%" width="100%"/>
 </p>
 <br />
+<h3 align="center">Enable Extensions in IIS: Note that some extensions are not enabled</h3>
+<br />
+<p>
+	Go back to IIS, sites -> Default -> osTicket.
+</p>
+<p>
+	Double-click PHP Manager:
+</p>
+<p>
+	<img src="https://i.imgur.com/Hg4SY7h.png" height="75%" width="100%" />
+</p>
+	Click “Enable or disable an extension”.
+</p>
+<p>
+	Enable: php_imap.dll.
+</p>
+<p>
+	Enable: php_intl.dll.
+</p>
+<p>
+	Enable: php_opcache.dll:
+</p>
+<br />
+<h3 align="center">Refresh the osTicket site in your browser, observe the changes</h3>
+<br />
+<p>
+	<img src="https://i.imgur.com/995Kl6y.png" height="75%" width="100%" />
+</p>
+<br />
+<br />
+<h3 align="center">Rename</h3>
+<br />
+<p>
+	From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php.
+</p>
+<p>
+	To: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
+</p>
+<p>
+<img src="https://i.imgur.com/V4rEzk3.png" height="75%" width="100%" />
+</p>
+<br />
+<br />
+<h3 align="center">Assign Permissions: ost-config.php</h3>
+<br />
+<p>
+	Disable inheritance -> Remove All:
+</p>
+<p>
+	<img src="https://i.imgur.com/HPLTg1w.png" height="75%" width="100%" />
+</p>
+New Permissions -> Everyone -> All:
+</p>
+<p>
+	<img src="https://i.imgur.com/p6sGQ1H.png" height="75%" width="100%" />
+</p>
+<p>
+	<img src="https://i.imgur.com/u2ARYA3.png" height="75%" width="100%" />
+</p>
+<br />
+<br />
+<h3 align="center">Continue Setting up osTicket in the browser (click Continue)</h3>
+<br />
+<p>
+	Name Helpdesk.
+</p>
+<p>
+	Default email (receives email from customers):
+</p>
+<p>
+	<img src="https://i.imgur.com/7Qktde7.png" height="75%" width="100%" />
+	<img src="https://i.imgur.com/vipS8BN.png" height="75%" width="100%" />
+</p>
+<br />
+<br />
+<h3 align="center">Download and Install HeidiSQL</h3>
+<br />
+<p>
+	<img src="https://i.imgur.com/swBANPt.png" height="75%" width="100%" />
+</p>
+<p>
+	Create a new session, root/Password1.
+</p>
+<p>
+	Connect to the session:
+</p>
+<p>
+	<img src="https://i.imgur.com/8EMfHBx.png" height="75%" width="100%" "/>
+</p>
+<p>
+	Create a database called “osTicket”:
+</p>
+<p>
+	<img src="https://i.imgur.com/jEH1pfC.png" height="75%" width="100%" />
+</p>
+<br />
+<br />
+<h3 align="center">Continue Setting up osTicket in the browser</h3>
+<br />
+<p>MySQL Database: osTicket</p>
+<p>
+	MySQL Username: root
+</p>
+<p>
+	MySQL Password: Password1:
+</p>
+<p>
+	<img src="https://i.imgur.com/CEBdWZf.png" height="75%" width="100%" />
+</p>
+<p>Click “Install Now!”</p>
+<p>Congratulations, hopefully it is installed with no errors!</hp>
+<p>
+	<img src="https://i.imgur.com/h7pG7sJ.png" height="75%" width="100%" />
+</p>
+<br />
+<br />
+<h3 align="center">Clean up</h3>
+<br />
+<p>
+	Delete: C:\inetpub\wwwroot\osTicket\setup:
+</p>
+Delete: C:\inetpub\wwwroot\osTicket\setup:
+</p>
+<p>
+	<img src="https://i.imgur.com/SOH7LvG.png" height="75%" width="100%" />
+</p>
+<p>
+	Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
+</p>
+<p>
+	<img src="https://i.imgur.com/SSaJquz.png" height="75%" width="100%" />
+</p>
+<br />
+<br />
+<h3 align="center">Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)</h3>
+<br />
+<p>
+	<img src="https://i.imgur.com/eUn0myH.png" height="75%" width="100%" />
+</p>
+<br />
+<br />
+<h3 align="center"> Congrats, You've Finished Installing osTicket.</h3>
