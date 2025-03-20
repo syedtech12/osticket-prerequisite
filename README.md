@@ -75,4 +75,22 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 <p>
 <h3 align="center">Download the Rewrite Module file, agree with all the terms and it should now be installed onto the Computer.</h3>
 <p>
-<img src=""height="75%" width="100%"/>
+<img src="https://i.imgur.com/lZZYQDi.png"height="75%" width="100%"/>
+</p>
+<br/>
+<h3 align="center">CREATE DIRECTORY C:\PHP</h3>
+<br />
+<p>
+<h3 align="center"> Open File Explorer, type, "C:\" in the search bar, Right-click and create a new folder called, "PHP". Download php-7.3.8-nts-Win32-VC15-x86.zip from<a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> Files You Need to Download</a>, Extract it by going to where you download the file, Right-click the PHP 7.3.8 file and press extract to the PHP Folder you just created.
+</h3>
+<p>
+<img src="https://i.imgur.com/nsaSISR.png"height="75%" width="100%"/>
+</p>
+<br/>
+<h3 align="center">VC_REDIST DOWNLOAD</h3>
+<br/>
+<h3 align="center"> Download and install VC_Redist, Agree with any terms and agreements and finish installing.
+</h3>
+<p>
+  <img src=""75%" width="100%"/>
+</p>
